@@ -1,0 +1,263 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_RULE_Project3.out
+
+<END>
+
+<BEGIN> BUILD_RULE_Project3.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_BUILDRULE
+Project3.out
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_AR
+arsimpc
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_ARCHIVE
+$(PRJ_DIR)/SIMNTgnu/Project3.a
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_AS
+ccsimpc
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_CC
+ccsimpc
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_CC_ARCH_SPEC
+-mpentium
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_CFLAGS
+-g \
+	-mpentium \
+	-ansi \
+	-fno-builtin \
+	-fno-defer-pop \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(WIND_BASE)/target/config/s3c2440x \
+	-DCPU=SIMNT \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_CFLAGS_AS
+-g \
+	-mpentium \
+	-ansi \
+	-fno-builtin \
+	-fno-defer-pop \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=SIMNT \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_CPP
+ccsimpc -E -P
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_LD
+ldsimpc
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_LDDEPS
+
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_LDFLAGS
+--subsystem=windows
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_LD_PARTIAL
+ccsimpc -r -nostdlib
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_LD_PARTIAL_FLAGS
+-r
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_NM
+nmsimpc -g
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_PRJ_LIBS
+
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_SIZE
+sizesimpc
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_SIMNTgnu_TC
+::tc_SIMNTgnu
+<END>
+
+<BEGIN> BUILD__CURRENT
+SIMNTgnu
+<END>
+
+<BEGIN> BUILD__LIST
+SIMNTgnu
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/led.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/led.c_dependencies
+
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/led.c_objects
+led.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/led.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/led.h_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/main.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/main.c_dependencies
+
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/main.c_objects
+main.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/main.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/my_timer.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/my_timer.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i386-pc-mingw32/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i386-pc-mingw32/gcc-2.96/include/stdarg.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/my_timer.c_objects
+my_timer.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/my_timer.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/my_timer.h_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/task_getTimer.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/task_getTimer.c_dependencies
+$(PRJ_DIR)/task_getTimer.h \
+	$(PRJ_DIR)/my_timer.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i386-pc-mingw32/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i386-pc-mingw32/gcc-2.96/include/stdarg.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/task_getTimer.c_objects
+task_getTimer.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/task_getTimer.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/task_getTimer.h_dependDone
+TRUE
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/my_timer.c \
+	$(PRJ_DIR)/main.c \
+	$(PRJ_DIR)/task_getTimer.c \
+	$(PRJ_DIR)/led.c \
+	$(PRJ_DIR)/my_timer.h \
+	$(PRJ_DIR)/task_getTimer.h \
+	$(PRJ_DIR)/led.h
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+
